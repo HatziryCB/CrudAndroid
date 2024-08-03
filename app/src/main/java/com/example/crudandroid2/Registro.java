@@ -33,11 +33,11 @@ protected void onCreate(Bundle savedInstanceState) {
 
     registrarButton.setOnClickListener(new View.OnClickListener() {
         @Override
-        public void onClick(View view) {  registrarStock();  }
+        public void onClick(View view) {  registrarCliente();  }
     });
 }
 
-    public void registrarStock(){
+    public void registrarCliente(){
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "db_stock", null, 1);
         SQLiteDatabase db = conn.getWritableDatabase();
 
